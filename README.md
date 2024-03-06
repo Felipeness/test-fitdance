@@ -1,30 +1,73 @@
-# React + TypeScript + Vite
+# Projeto de Gerenciamento de Usuários com SDKGen 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto demonstra a implementação de uma aplicação de gerenciamento de usuários, utilizando o SDKGen para comunicação entre o front-end e o back-end de forma eficiente e simplificada. 🛠️
 
-Currently, two official plugins are available:
+## Sobre o Projeto 📖
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O objetivo deste projeto é fornecer uma interface de usuário intuitiva para o gerenciamento de usuários, permitindo operações como criação, leitura, atualização e exclusão (CRUD). Utilizando o SDKGen, automatizamos a geração de código para a comunicação entre cliente e servidor, melhorando a eficiência do desenvolvimento e manutenção do código.
 
-## Expanding the ESLint configuration
+### Tecnologias Utilizadas 💻
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Front-end**: React com TypeScript
+- **Estilização**: SCSS para um design responsivo e moderno
+- **Back-end**: SDKGen para definição da API e geração automática de SDKs
 
-- Configure the top-level `parserOptions` property like this:
+## Funcionalidades Principais ✨
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- **Listagem de Usuários**: Visualize todos os usuários cadastrados.
+- **Criação de Usuários**: Adicione novos usuários ao sistema.
+- **Edição de Usuários**: Atualize informações dos usuários existentes.
+- **Exclusão de Usuários**: Remova usuários do sistema.
+- **Ativação/Inativação de Usuários**: Altere o status de ativação dos usuários.
+
+## Começando 🚀
+
+Para iniciar com o projeto, siga estas etapas:
+
+1. **Clone o repositório**
+
+```bash
+git clone https://github.com/Felipeness/test-fitdance.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. **Instale as dependências**
+
+No diretório do projeto, execute:
+
+```bash
+pnpm install
+```
+
+3. **Inicie o projeto**
+
+```bash
+pnpm run dev
+```
+
+O aplicativo estará disponível em `http://localhost:5173`.
+
+## Estrutura do Projeto 🏗️
+
+A estrutura de diretórios do projeto é a seguinte:
+
+```
+/projeto
+  /src
+    /components
+      /Modal
+      /Pagination
+      /Table
+    /api
+      sdkgenApi.ts
+      web-client.ts
+    /styles
+      variables.scss
+      global.scss
+      responsive.scss
+  App.tsx
+  main.tsx
+```
+
+Feito por [Felipe Ness](https://github.com/Felipeness)
+
+# React + TypeScript + Vite
