@@ -55,7 +55,6 @@ const DataTable = () => {
         <div className="header-table">
           <div className="header-h2">
             <h2>Lista</h2>
-            <h2>Informações</h2>
           </div>
           <button onClick={() => setIsCreateModalOpen(true)}>
             Criar Novo Usuário
